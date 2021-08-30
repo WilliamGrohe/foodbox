@@ -1,18 +1,36 @@
 *{
   margin: 0;
   padding: 0;
+
+  font-family: 'Poppins', sans-serif;;
 }
 
 body{
   background: #e5e5e5;
+  display: grid;
+  justify-content: center;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+h2{
+  margin-top: 10px;
 }
 
 header{
-  background: #cf2b2b;
-  border-radius: 5px;
   width: 400px;
+  border-radius: 5px;
+  
+  background: #cf2b2b;
+  color: white;
 
   padding: 10px;
+  margin: 10px 0;
+
+  box-shadow: 0 0 10px 0 #bbb;
 }
 
 .item {
@@ -22,4 +40,16 @@ header{
 
   padding: 10px;
   margin: 10px 0;
+
+  box-shadow: 0 0 10px 0 #bbb;
+}
+
+.item img{
+  width: 130px;
+  float: right;
+  border-radius: 5px;
+}
+
+.item span {
+  font-weight: 700;
 }
