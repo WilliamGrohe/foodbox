@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #e5e5e5;
+}
+
+header{
+  background: #cf2b2b;
+  border-radius: 5px;
+  width: 400px;
+
+  padding: 10px;
+}
+
+.item {
+  width: 400px;
+  background: white;
+  border-radius: 5px;
+
+  padding: 10px;
+  margin: 10px 0;
+}
