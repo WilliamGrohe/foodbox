@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   font-family: 'Poppins', sans-serif;;
 }
@@ -8,7 +9,7 @@
 body{
   background: #e5e5e5;
   display: grid;
-  justify-content: center;
+  justify-items: center;
 }
 
 h1, h2 {
@@ -52,4 +53,35 @@ header{
 
 .item span {
   font-weight: 700;
+}
+
+.item.selected {
+  border: 2px solid #0b940b;
+}
+
+/* BOTÃO */
+.button {
+  background: #0b940b;
+  text-align: center;
+  border-radius: 24px;
+  padding: 8px;
+  margin: 24px 0;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+/* FOOTER */
+footer {
+  background: #cf2b2b;
+  color: white;
+
+  width: 100%;
+
+  padding: 36px 24px;
+  margin-top: 36px;
 }
