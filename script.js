@@ -1,5 +1,3 @@
-const { link } = require("fs");
-
 const frango = document.getElementById('frango');
 const carne = document.getElementById('carne');
 const coca = document.getElementById('coca');
