@@ -38,6 +38,12 @@ main {
   display: contents;
 }
 
+.itens {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
 .item {
   width: 95%;
   background: white;
@@ -90,4 +96,15 @@ footer {
 
   padding: 36px 24px;
   margin-top: 36px;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 767px){
+  .itens {
+    display: grid;
+    justify-items: center;
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+  }
 }
