@@ -1,3 +1,5 @@
+const { link } = require("fs");
+
 const frango = document.getElementById('frango');
 const carne = document.getElementById('carne');
 const coca = document.getElementById('coca');
@@ -59,7 +61,8 @@ function selectedSorvete() {
 }
 
 function mostrarPrato() {
-  console.log(`Olá, gostaria de pedir um combo: ${prato}, ${bebida} e ${sobremesa} para sobremesa`)
+  let pedido = `Olá, gostaria de pedir um box de ${prato}, ${bebida} e ${sobremesa}`
+  window.open(`https://wa.me/+5551996038056?text=${pedido}`)
 }
 
 

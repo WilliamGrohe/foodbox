@@ -18,24 +18,28 @@ h1, h2 {
 }
 
 h2{
-  margin-top: 10px;
+  margin-top: 24px;
 }
 
 header{
-  width: 400px;
+  width: 95%;
   border-radius: 5px;
   
   background: #cf2b2b;
   color: white;
 
   padding: 10px;
-  margin: 10px 0;
+  margin-top: 10px;
 
   box-shadow: 0 0 10px 0 #bbb;
 }
 
+main {
+  display: contents;
+}
+
 .item {
-  width: 400px;
+  width: 95%;
   background: white;
   border-radius: 5px;
 
@@ -67,6 +71,8 @@ header{
   padding: 8px;
   margin: 24px 0;
   cursor: pointer;
+
+  width: 240px;
 }
 
 .button a {
