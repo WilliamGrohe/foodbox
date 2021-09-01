@@ -59,10 +59,18 @@ function selectedSorvete() {
 }
 
 function mostrarPrato() {
-  let pedido = `Olá, gostaria de pedir um box de ${prato}, ${bebida} e ${sobremesa}`
+  if (!prato && !bebida && !sobremesa){
+    alert('Selecione ao menos um item para seu pedido')
+    return
+  }
+
+  let pedido = `Olá, gostaria de pedir um box de:
+  *Prato:* ${prato ? prato : 'Hoje vou passar'};
+  *Bebida:* ${bebida ? bebida : 'Hoje vou passar'};
+  *Sobremesa:* ${sobremesa ? sobremesa : 'Hoje vou passar'}`
+  pedido = window.encodeURIComponent(pedido)
   window.open(`https://wa.me/+5551996038056?text=${pedido}`)
 }
-
 
 frango.addEventListener('click', selectedFrango)
 carne.addEventListener('click', selectedCarne)
